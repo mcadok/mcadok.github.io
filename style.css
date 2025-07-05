@@ -115,8 +115,12 @@ nav a:hover {
 }
 
 .header-contact-icons a img {
-  margin-left: 1rem;
   vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.header-contact-icons a img:hover {
+  transform: scale(1.4);
 }
 
 /* Project screenshots */
@@ -175,8 +179,46 @@ footer {
   }
 
   .header-contact-icons {
-    margin-top: 1rem;
+    display: flex; /* DODAJ TO */
     justify-content: flex-start;
+    align-items: center;
+    gap: 1rem; /* Ustalony, równy odstęp między ikonami */
+    margin-top: 1rem;
     width: 100%;
   }
+}
+/* Efekt hover na logo */
+#logo img {
+  transition: transform 0.3s ease;
+}
+
+#logo img:hover {
+  transform: scale(1.4); /* lekko powiększa logo */
+}
+
+/* Efekt hover na ikonki kontaktowe */
+.header-contact-icons a img {
+  transition: transform 0.3s ease;
+}
+
+.header-contact-icons a img:hover {
+  transform: scale(1.4); /* troszkę bardziej niż logo */
+}
+.header-contact-icons a:focus {
+  outline: none;
+}
+.contact-links {
+  display: flex;
+  gap: 1.5rem; /* odstęp między ikonami */
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.contact-links a img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-links a img:hover {
+  transform: scale(1.4);
 }
