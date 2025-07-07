@@ -27,7 +27,7 @@ body::after {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 60vw;
+  width: 50vw;
   background-image: url('static/tlo_st.jpg');
   background-size: cover;
   background-repeat: no-repeat;
